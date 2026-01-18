@@ -18,9 +18,34 @@
     --foreground: #ededed;
   }
 }
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: #030712;
+        color: #f3f4f6;
+        margin: 0;
+        overflow-x: hidden;
+      }
+      .glass-morphism {
+        background: rgba(17, 24, 39, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #030712;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #374151;
+        border-radius: 4px;
+      }
+      .scroll-smooth {
+        scroll-behavior: smooth;
+      }
+      /* Custom selection color */
+      ::selection {
+        background: rgba(59, 130, 246, 0.3);
+        color: #fff;
+      }
